@@ -1,0 +1,7 @@
+#editNoteForm.hide {
+    display: none;
+}
+
+#notes-list li.selected {
+    background-color: aquamarine;
+}

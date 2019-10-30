@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./app.css" />
+    <title>تطبيق الملاحظات</title>
+  </head>
+
+  <body>
+    <h2>أضف ملاحظة</h2>
+    <form id="addNoteForm">
+      <label for="title">
+        العنوان:
+        <br />
+        <input type="text" name="title" placeholder="أدخل عنوان الملاحظة هنا" />
+      </label>
+
+      <br />
+      <br />
+
+      <label for="body">
+        محتوى الملاحظة:
+        <br />
+        <textarea name="body" cols="30" rows="5"></textarea>
+      </label>
+      <br />
+      <button type="submit">أضف ملاحظة</button>
+    </form>
+
+    <hr />
+
+    <h2>عرض/تعديل الملاحظات</h2>
+
+    <div id="div-list">
+      <ul id="notes-list"></ul>
+    </div>
+
+    <form id="editNoteForm" class="hide">
+      <label for="titleEdit">
+        العنوان:
+        <br />
+        <input type="text" id="titleEdit" />
+      </label>
+
+      <br />
+      <br />
+
+      <label for="bodyEdit">
+        محتوى الملاحظة:
+        <br />
+        <textarea id="bodyEdit" cols="30" rows="5"></textarea>
+      </label>
+      <br />
+      <button type="button" id="saveBtn">حفظ التعديلات</button>
+      <button type="button" id="deleteBtn">حذف الملاحظة</button>
+      <button type="button" id="cancelBtn">إلغاء</button>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
